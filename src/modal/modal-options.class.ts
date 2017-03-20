@@ -17,6 +17,10 @@ export interface ModalOptions {
    * Ignore the backdrop click
    */
   ignoreBackdropClick?:boolean;
+  /**
+   * Append backdrop to this selector
+   */
+  selector: string;
 }
 
 export const modalConfigDefaults:ModalOptions = {
@@ -24,7 +28,8 @@ export const modalConfigDefaults:ModalOptions = {
   keyboard: true,
   focus: true,
   show: false,
-  ignoreBackdropClick: false
+  ignoreBackdropClick: false,
+  selector: 'body'
 };
 
 export const ClassName:any = {
